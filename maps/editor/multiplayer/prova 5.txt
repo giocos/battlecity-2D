@@ -1,0 +1,25 @@
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null [//] [//] [//] null null 
+null null null null null null null [//] [//] [//] [//] [//] [//] [//] [//] [//] [||] [||] [//] [//] null 
+null null null null null null null [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [//] [//] null 
+[//] [//] [//] [//] [//] [//] [//] [//] [//] [//] [//] [//] [||] [//] [//] [||] [||] [||] [||] [//] [//] 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null [//] null null null null null null null null null null null null null 
+null null null null null null null [//] [//] [//] [//] [//] [//] [//] [//] null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null P1 null FLAG null null P2 null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+
+basic 0
+armor 0
+fast 15
+power 0

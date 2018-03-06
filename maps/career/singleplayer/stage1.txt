@@ -1,0 +1,26 @@
+null null null [||] null [||] null [||] null [||] null [||] null [||] null [||] null [||] null null null  
+null null null [||] null [||] null [||] null [||] null [||] null [||] null [||] null [||] null null null 
+null null null [||] null [||] null [||] null [||] null [||] null [||] null [||] null [||] null null null  
+null null null [||] null [||] null [||] null [||] null [||] null [||] null [||] null [||] null null null 
+null null null [||] null [||] null [||] null [||] [//] [||] null [||] null [||] null [||] null null null 
+null null null [||] null [||] null [||] null [||] null [||] null [||] null [||] null [||] null null null 
+null null null [||] null [||] null [||] null null null null null [||] null [||] null [||] null null null 
+null null null null null null null null null [||] null [||] null null null null null null null null null 
+[||] [||] null [||] [||] [||] [||] [||] null [||] null [||] null [||] [||] [||] [||] [||] null [||] [||] 
+[//] [//] null [||] [||] [||] [||] [||] null null null null null [||] [||] [||] [||] [||] null [//] [//]
+null null null null null null null null null [||] null [||] null null null null null null null null null  
+null null null null null null null null null [||] [||] [||] null null null null null null null null null  
+null null [||] null [||] null [||] null null [||] [||] [||] null null [||] null [||] null [||] null null 
+null null [||] null [||] null [||] null null [||] null [||] null null [||] null [||] null [||] null null   
+null null [||] null [||] null [||] null null [||] null [||] null null [||] null [||] null [||] null null   
+null null [||] null [||] null [||] null null [||] null [||] null null [||] null [||] null [||] null null  
+null null [||] null [||] null [||] null null null null null null null [||] null [||] null [||] null null  
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null [||] [||] [||] null null null null null null null null null 
+null null null null null null null null  P1  [||] FLAG [||] null null null null null null null null null  
+
+basic 18
+armor 2
+N/A
+N/A
+

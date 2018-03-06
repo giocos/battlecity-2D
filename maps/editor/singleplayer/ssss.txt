@@ -1,0 +1,25 @@
+null null null null null [||] [||] [||] [//] null null null null null [//] [||] [||] null null null null 
+null null null null [||] [||] [||] [||] [//] null null null null null [//] [||] [||] null null null null 
+null null null null [||] [||] [||] [||] [//] null null null null null [//] [||] [||] null null null null 
+[||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] 
+[||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] 
+[||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] [||] 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null [//] [//] [//] [//] null null null null 
+null null null null null null null null null null null null [//] [//] null null [//] [//] null null null 
+null null null null null null null null null null null [//] [//] null null null null [//] null null null 
+null null null null null null null null null null null [//] null null null null null [//] null null null 
+null null null null null null null null null null [//] [//] null null FLAG null null [//] [//] null null 
+null null null null null null null null null null [//] null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+null null null null null null null null null null null null null null null P1 null null null null null 
+null null null null null null null null null null null null null null null null null null null null null 
+
+basic 0
+armor 0
+fast 20
+power 0

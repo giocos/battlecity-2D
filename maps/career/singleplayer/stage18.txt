@@ -1,0 +1,25 @@
+null null null null null null null null null null null null null null null null null [//] [//] null null 
+null null null null null null null null null null null null null null null null [//] [//] null null null 
+null null null null null null null null null [//] [//] null null null [||] [||] [||] null null null null 
+null null null null null null null null TTTT TTTT TTTT TTTT null null [||] [||] [||] null null null null 
+null null null null null null [||] [||] TTTT TTTT TTTT TTTT [//] [//] [||] [||] [||] null null null null 
+null null null null null null TTTT TTTT TTTT @@@@ @@@@ TTTT TTTT TTTT [||] [||] [||] null null null null 
+null null null null [//] [//] TTTT TTTT @@@@ @@@@ @@@@ @@@@ TTTT TTTT [||] [||] [||] null null null null 
+null null null null TTTT TTTT TTTT TTTT @@@@ @@@@ @@@@ @@@@ TTTT TTTT TTTT TTTT [||] null null null null 
+null null [||] [||] TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT [||] [||] null null 
+null null TTTT TTTT TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT TTTT TTTT null null 
+[//] [//] TTTT TTTT TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT TTTT TTTT [//] [//] 
+TTTT TTTT TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT TTTT TTTT 
+TTTT TTTT TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT TTTT TTTT 
+null null TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT null null 
+null null TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT null null 
+null null TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT null null 
+null null TTTT TTTT @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ @@@@ TTTT TTTT null null 
+null null TTTT TTTT @@@@ @@@@ @@@@ @@@@ null null null null null @@@@ @@@@ @@@@ @@@@ TTTT TTTT null null 
+null null TTTT TTTT @@@@ @@@@ @@@@ null null [||] [||] [||] null null @@@@ @@@@ @@@@ TTTT TTTT null null 
+null null TTTT TTTT @@@@ @@@@ @@@@ null P1 [||] FLAG [||] null null @@@@ @@@@ @@@@ TTTT TTTT null null 
+
+basic 2
+armor 4
+fast 8
+power 6
