@@ -1,4 +1,4 @@
-# Battle City <img src="images/backGroundPlayer.png" align="right" height=50/> <img src="images/backGroundPlayer.png" align="right" height=50/>
+# Battle City <img src="images/backGroundPlayer.png" align="right" height=50/> <img src="images/player2A.png" align="right" height=50/>
 
 ## Introduzione:
 
