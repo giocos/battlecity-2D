@@ -1,7 +1,5 @@
 # Battle City
 
-![image](images/home.png "Homepage")
-
 ## Introduzione:
 
 Battle City è un videogioco arcade che rispecchia lo stile NES realizzato con una grafica 2D, utilizzando le swing fornite dalla libreria di Java 8.
@@ -78,6 +76,7 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 
 ## Other Screenshots:
 
+![image](images/home.png "Homepage")
 ![multiplayer](images/multiplayer.png "Multiplayer offline")
 ![editor](images/editor.png "Editor")
 ![lobby](images/lobby.png "Lobby")
@@ -86,3 +85,6 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 ## Built With
 
 * [Java](https://docs.oracle.com/javase/8/docs/api/) 
+
+## Contributing
+
