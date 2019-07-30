@@ -71,7 +71,7 @@ In questa classe viene istanziato il GameManager del server. Inoltre viene gesti
 Metodi principali:    startGame()     received(String buffer)
 Quest’ultimo metodo permette alla classe di settare nella sua istanza di gameManager, tutti i dati che vengono inviati dai client, come per esempio, un tasto di movimento premuto, o il tasto pause e così via.
 
-### ConnectionManager-(net)
+### ConnectionManager - (package net)
 In questa classe, che implementa un Runnable, vengono settati i canali di comunicazione con gli altri client attraverso il BufferedReader e il PrintWriter. Nel run() ci sono due fasi:
 1)Pre-Set, dove il client aspetta dal server che la partita abbia inizio attraverso la stringa “#START”, e mentre aspetta, gli arrivano stringhe con il nome dei player che si stanno collegando.
 2)Post-set, dove, una volta ricevuto la stringa “#START”, il client legge continuamente stringhe che permettono di disegnare.
