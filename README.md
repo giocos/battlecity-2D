@@ -72,5 +72,5 @@ Lobby:
 ![image](images/lobby.png)
 
 Online:
-![image](images/1.png)
+![image](images/online visu mdoer.png)
 
