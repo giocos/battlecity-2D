@@ -87,4 +87,6 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 * [Java](https://docs.oracle.com/javase/8/docs/api/) 
 
 ## Contributing
-
+------
+Giovanni Cosentino - https://github.com/giocos  
+Davide Aloia - https://github.com/playa92
