@@ -23,16 +23,15 @@ Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello de
 
 Ogni nemico ha le proprie caratteristiche, i quali possono essere lampeggianti ( all’uccisione rilasciano cadere un powerUp random ) o normali che non rilasciano nessun powerUp. Inoltre anche i nemici posso catturare il potenziamento HELMET.
 
-![image](https://drive.google.com/open?id=1hcjedrcKllaXqMvyUn3pPxHTh1jxHUBy)
+![image](images/2.png)
 
 Ogni potenziamento può essere preso solo dai Player, escluso Helmet che invece può anche essere catturato dagli Enemy.
 
-![image](https://drive.google.com/open?id=1eIlFbA2eoZj5cdY9HqzhHwCWek5rEGon)
+![image](images/3.png)
 
 Ogni mappa può essere costituita dai seguenti oggetti
 
-![image](https://drive.google.com/open?id=1n3W3VuWgcr2mqIFEDqkYXv8blBqNtfK3)
-
+![image](images/4.png)
 
 4.	Descrizione Classi:
 
@@ -67,11 +66,11 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 5. Screenshots:
 
 Editor:
-![image](https://drive.google.com/file/d/1HZJxn_C1qOGvjJ5CdQDJNByLOkSf3Q43/view?usp=sharing)
+![image](images/editor.png)
 
 Lobby:
-![image](https://drive.google.com/open?id=1pnuXuWVXWlYCI1kxop5-OBUZeQ3BnL6J)
+![image](images/lobby.png)
 
 Online:
-![image](https://drive.google.com/open?id=1ITrVSNRS-l2kH9ngx9SgksMDTBawTTeR)
+![image](images/1.png)
 
