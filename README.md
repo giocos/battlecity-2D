@@ -19,14 +19,55 @@ Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello de
 
 Ogni nemico ha le proprie caratteristiche, i quali possono essere lampeggianti ( all’uccisione rilasciano cadere un powerUp random ) o normali che non rilasciano nessun powerUp. Inoltre anche i nemici posso catturare il potenziamento HELMET.
 
-![Alt text](https://www.dropbox.com/s/tca59hcsfcu7oxa/1.png?dl=0)
+![image](https://drive.google.com/open?id=1hcjedrcKllaXqMvyUn3pPxHTh1jxHUBy)
 
 Ogni potenziamento può essere preso solo dai Player, escluso Helmet che invece può anche essere catturato dagli Enemy.
 
-![Alt text](https://www.dropbox.com/s/tca59hcsfcu7oxa/1.png?dl=0)
+![image](https://drive.google.com/open?id=1eIlFbA2eoZj5cdY9HqzhHwCWek5rEGon)
 
 Ogni mappa può essere costituita dai seguenti oggetti
 
-![Alt text](https://www.dropbox.com/s/tca59hcsfcu7oxa/1.png?dl=0)
+![image](https://drive.google.com/open?id=1n3W3VuWgcr2mqIFEDqkYXv8blBqNtfK3)
 
+
+4.	Descrizione Classi:
+
+•	GameManager – (package core)
+Questa classe  gestisce l’intero gioco per quanto riguarda la parte logica, sia nell’offline che in una partita online. Al suo interno troviamo metodi che hanno lo scopo di inizializzare il campo di battaglia e tutti i suoi relativi oggetti appartenenti reperendoli da una mappa scelta dall’utente. Inoltre svolge il ruolo di aggiornare gli update di tutti gli oggetti dinamici e gestirne le eventuali collisioni.
+Metodo principale:      update()
+Questo metodo è il nucleo del mondo in quanto si occupa di aggiornare tutte le componenti logiche di una partita, infatti si trova all’interno di ogni oggetto dinamico e gestisce tutte le collisioni relative ad essi. Per comodità, nel codice tale metodo è stato dichiarato abstract nella classe padre estesa ai vari figli rappresentati da oggetti dinamici, i quali si occuperanno di richiamare e ridefinire il seguente metodo. 
+•	GamePanel – (package gui)
+Questa classe è strettamente dipendente dalla classe sopra enunciata (GameManager), ha il compito di gestire in modo sequenziale all’interno di un loop gli aggiornamenti logici seguiti da quelli grafici, stabilendo le diverse velocità degli oggetti in modo tale da avere la stessa esperienza di gioco su processori differenti. Successivamente prevede la cattura degli eventi per l’input da tastiera durante la partita, attraverso l’uso di una struttura dati molto versatile, in quanto consente di gestire più eventi in contemporanea ed ottenere una fluidità ottimale.
+Metodo principale:        run()
+Il seguente metodo viene ridefinito dalla classe Thread e richiama il gameLoop con la seguente sintassi :
+GameLoop() {
+          logic();
+        graphic();
+}
+- logic() richiama a sua volta l’aggiornamento di tutte le istanze attraverso il metodo sopra enunciato nella classe GameManager.
+- Il metodo graphic() si occupa di gestire le relative animazioni e i vari repaint degli oggetti. 
+•	Server– (package net)
+In questa classe, viene creato il server socket per entrambi i servizi forniti per una specifica porta; I servizi forniti sono: la chat, dove il server rimane in ascolto per eventuali client che vogliono entrare e il game in cui il server, prima di avviare, aspetta che i due client si colleghino per avviare una sessione di gioco. Da notare che la classe Server implementa un Runnable il cui corpo del run() viene gestito da un thread specifico. 
+•	ServerGameManager - (package net)
+In questa classe viene istanziato il GameManager del server. Inoltre viene gestito i nomi nel gioco per ogni giocatore connesso (P1 o P2), fondamentale per distinguere i client nel gioco. Il compito principale dell’intera classe è quello di avviare il thread che gira per la funzione gameLoop(), dopo aver fatto dei settaggi di sistema ai client connessi al server. 
+Metodi principali:    startGame()     received(String buffer)
+Quest’ultimo metodo permette alla classe di settare nella sua istanza di gameManager, tutti i dati che vengono inviati dai client, come per esempio, un tasto di movimento premuto, o il tasto pause e così via.
+•	ConnectionManager-(net)
+In questa classe, che implementa un Runnable, vengono settati i canali di comunicazione con gli altri client attraverso il BufferedReader e il PrintWriter. Nel run() ci sono due fasi:
+1)	Pre-Set, dove il client aspetta dal server che la partita abbia inizio attraverso la stringa “#START”, e mentre aspetta, gli arrivano stringhe con il nome dei player che si stanno collegando.
+2)	Post-set, dove, una volta ricevuto la stringa “#START”, il client legge continuamente stringhe che permettono di disegnare.
+
+
+
+
+5. Screenshots:
+
+Editor:
+![image](https://drive.google.com/file/d/1HZJxn_C1qOGvjJ5CdQDJNByLOkSf3Q43/view?usp=sharing)
+
+Lobby:
+![image](https://drive.google.com/open?id=1pnuXuWVXWlYCI1kxop5-OBUZeQ3BnL6J)
+
+Online:
+![image](https://drive.google.com/open?id=1ITrVSNRS-l2kH9ngx9SgksMDTBawTTeR)
 
