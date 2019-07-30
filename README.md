@@ -67,9 +67,8 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 
 
 
-**5. Screenshots:
+**5. Other Screenshots:
 
-![homepage](images/home.png)
 ![editor](images/editor.png)
 ![lobby](images/lobby.png)
 ![online](images/online.png)
