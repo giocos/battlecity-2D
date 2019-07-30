@@ -78,7 +78,7 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 
 ## Other Screenshots:
 
-![editor](images/editor.png)
+![editor](images/editor.png "Editor")
 ![lobby](images/lobby.png)
 ![online](images/online.png)
 
