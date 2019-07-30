@@ -1,6 +1,6 @@
 # BATTLE CITY
 
-**1. Introduzione:
+**1. Introduzione: **
 
 Battle City è un videogioco arcade che rispecchia lo stile NES realizzato con una grafica 2D, utilizzando le swing fornite dalla libreria di Java 8.
 Il player è rappresentato da un carrarmato che si scontrerà con altri carrarmati nemici con il solo scopo di difendere la sua fortezza.
