@@ -18,7 +18,7 @@ Le difficoltà di gioco possono essere scelte tra easy, normal e hard, dove ques
 
 Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello del carrarmato. Le vite del carrarmato sono 3, quando si muore, si ritorna automaticamente al livello 1 e si perde una vita ripartendo dalla posizione di partenza. Le vite perse possono essere recuperate attraverso dei potenziamenti. Quando si muore, si ritorna automaticamente al livello 1.
 
-![image](https://drive.google.com/file/d/1bkwf7YxQrnwD_ycADgBbqPsq_n70AHjc/view?usp=sharing)
+![image](https://drive.google.com/open?id=1bkwf7YxQrnwD_ycADgBbqPsq_n70AHjc)
 
 
 
