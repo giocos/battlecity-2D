@@ -74,7 +74,7 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 1)Pre-Set, dove il client aspetta dal server che la partita abbia inizio attraverso la stringa “#START”, e mentre aspetta, gli arrivano stringhe con il nome dei player che si stanno collegando.
 2)Post-set, dove, una volta ricevuto la stringa “#START”, il client legge continuamente stringhe che permettono di disegnare.
 
-## Other Screenshots:
+## Screenshots:
 
 ![image](images/home.png "Homepage")
 ![multiplayer](images/multiplayer.png "Multiplayer offline")
@@ -87,6 +87,6 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 * [Java](https://docs.oracle.com/javase/8/docs/api/) 
 
 ## Contributing
-------
+
 Giovanni Cosentino - https://github.com/giocos  
 Davide Aloia - https://github.com/playa92
