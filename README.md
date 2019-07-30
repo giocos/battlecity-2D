@@ -18,7 +18,7 @@ Le difficoltà di gioco possono essere scelte tra easy, normal e hard, dove ques
 
 Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello del carrarmato. Le vite del carrarmato sono 3, quando si muore, si ritorna automaticamente al livello 1 e si perde una vita ripartendo dalla posizione di partenza. Le vite perse possono essere recuperate attraverso dei potenziamenti. Quando si muore, si ritorna automaticamente al livello 1.
 
-<img src="https://drive.google.com/file/d/1bkwf7YxQrnwD_ycADgBbqPsq_n70AHjc/view?usp=sharing"/>
+<a href="https://drive.google.com/file/d/1bkwf7YxQrnwD_ycADgBbqPsq_n70AHjc/view?usp=sharing"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>
 
 Ogni nemico ha le proprie caratteristiche, i quali possono essere lampeggianti ( all’uccisione rilasciano cadere un powerUp random ) o normali che non rilasciano nessun powerUp. Inoltre anche i nemici posso catturare il potenziamento HELMET.
 
