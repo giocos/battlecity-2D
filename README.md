@@ -47,12 +47,15 @@ Questo metodo è il nucleo del mondo in quanto si occupa di aggiornare tutte le 
 Questa classe è strettamente dipendente dalla classe sopra enunciata (GameManager), ha il compito di gestire in modo sequenziale all’interno di un loop gli aggiornamenti logici seguiti da quelli grafici, stabilendo le diverse velocità degli oggetti in modo tale da avere la stessa esperienza di gioco su processori differenti. Successivamente prevede la cattura degli eventi per l’input da tastiera durante la partita, attraverso l’uso di una struttura dati molto versatile, in quanto consente di gestire più eventi in contemporanea ed ottenere una fluidità ottimale.
 Metodo principale:        run()
 Il seguente metodo viene ridefinito dalla classe Thread e richiama il gameLoop con la seguente sintassi :
+```
 GameLoop() {
           logic();
         graphic();
 }
-- logic() richiama a sua volta l’aggiornamento di tutte le istanze attraverso il metodo sopra enunciato nella classe GameManager.
-- Il metodo graphic() si occupa di gestire le relative animazioni e i vari repaint degli oggetti. 
+```
+
+- **logic()** richiama a sua volta l’aggiornamento di tutte le istanze attraverso il metodo sopra enunciato nella classe GameManager.
+- Il metodo **graphic()** si occupa di gestire le relative animazioni e i vari repaint degli oggetti. 
 •	Server– (package net)
 In questa classe, viene creato il server socket per entrambi i servizi forniti per una specifica porta; I servizi forniti sono: la chat, dove il server rimane in ascolto per eventuali client che vogliono entrare e il game in cui il server, prima di avviare, aspetta che i due client si colleghino per avviare una sessione di gioco. Da notare che la classe Server implementa un Runnable il cui corpo del run() viene gestito da un thread specifico. 
 •	ServerGameManager - (package net)
@@ -70,3 +73,6 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 ![lobby](images/lobby.png)
 ![online](images/online.png)
 
+## Built With
+
+* [Java](https://docs.oracle.com/javase/8/docs/api/) 
