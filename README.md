@@ -1,6 +1,6 @@
 # Battle City
 
-![image](images/home.png)
+![image](images/home.png "Homepage")
 
 ## Introduzione:
 
@@ -78,9 +78,10 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 
 ## Other Screenshots:
 
+![multiplayer](images/multiplayer.png "Multiplayer offline")
 ![editor](images/editor.png "Editor")
-![lobby](images/lobby.png)
-![online](images/online.png)
+![lobby](images/lobby.png "Lobby")
+![online](images/online.png "Online")
 
 ## Built With
 
