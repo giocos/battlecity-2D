@@ -50,11 +50,11 @@ Questo metodo è il nucleo del mondo in quanto si occupa di aggiornare tutte le 
 
 Questa classe è strettamente dipendente dalla classe sopra enunciata (GameManager), ha il compito di gestire in modo sequenziale all’interno di un loop gli aggiornamenti logici seguiti da quelli grafici, stabilendo le diverse velocità degli oggetti in modo tale da avere la stessa esperienza di gioco su processori differenti. Successivamente prevede la cattura degli eventi per l’input da tastiera durante la partita, attraverso l’uso di una struttura dati molto versatile, in quanto consente di gestire più eventi in contemporanea ed ottenere una fluidità ottimale.
 
-•Metodo principale: run()
+•Metodo principale: gameLoop()
 
 Il seguente metodo viene ridefinito dalla classe Thread e richiama il gameLoop con la seguente sintassi :
 ```
-GameLoop() {
+gameLoop() {
           logic();
         graphic();
 }
