@@ -22,7 +22,7 @@ Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello de
 
 ![image](images/1.png)
 
-(spara un colpo che distrugge le pareti in acciaio e sono due volte più efficaci)
+(*spara un colpo che distrugge le pareti in acciaio e sono due volte più efficaci)
 
 Ogni nemico ha le proprie caratteristiche, i quali possono essere lampeggianti ( all’uccisione rilasciano cadere un powerUp random ) o normali che non rilasciano nessun powerUp. Inoltre anche i nemici posso catturare il potenziamento HELMET.
 
@@ -41,9 +41,12 @@ Ogni mappa può essere costituita dai seguenti oggetti
 •GameManager – (package core)
 
 Questa classe  gestisce l’intero gioco per quanto riguarda la parte logica, sia nell’offline che in una partita online. Al suo interno troviamo metodi che hanno lo scopo di inizializzare il campo di battaglia e tutti i suoi relativi oggetti appartenenti reperendoli da una mappa scelta dall’utente. Inoltre svolge il ruolo di aggiornare gli update di tutti gli oggetti dinamici e gestirne le eventuali collisioni.
-Metodo principale:      update()
+
+Metodo principale: update()
 Questo metodo è il nucleo del mondo in quanto si occupa di aggiornare tutte le componenti logiche di una partita, infatti si trova all’interno di ogni oggetto dinamico e gestisce tutte le collisioni relative ad essi. Per comodità, nel codice tale metodo è stato dichiarato abstract nella classe padre estesa ai vari figli rappresentati da oggetti dinamici, i quali si occuperanno di richiamare e ridefinire il seguente metodo. 
-•	GamePanel – (package gui)
+
+•GamePanel – (package gui)
+
 Questa classe è strettamente dipendente dalla classe sopra enunciata (GameManager), ha il compito di gestire in modo sequenziale all’interno di un loop gli aggiornamenti logici seguiti da quelli grafici, stabilendo le diverse velocità degli oggetti in modo tale da avere la stessa esperienza di gioco su processori differenti. Successivamente prevede la cattura degli eventi per l’input da tastiera durante la partita, attraverso l’uso di una struttura dati molto versatile, in quanto consente di gestire più eventi in contemporanea ed ottenere una fluidità ottimale.
 Metodo principale:        run()
 Il seguente metodo viene ridefinito dalla classe Thread e richiama il gameLoop con la seguente sintassi :
