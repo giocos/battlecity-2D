@@ -1,11 +1,11 @@
 # BATTLE CITY
 
-1. Introduzione:
+**1. Introduzione:
 
 Battle City è un videogioco arcade che rispecchia lo stile NES realizzato con una grafica 2D, utilizzando le swing fornite dalla libreria di Java 8.
 Il player è rappresentato da un carrarmato che si scontrerà con altri carrarmati nemici con il solo scopo di difendere la sua fortezza.
 
-2. Modalita’ di gioco:
+**2. Modalita’ di gioco:
 
 Il gioco prevede due modalità differenti:
 • Nella carriera di gioco è possibile decidere se intraprendere la modalità single o multiplayer. L’obiettivo del giocatore è quello di difendere la propria “base”, rappresentata da una bandiera, dall’ assedio dei carrarmati nemici. La carriera è composta da un totale di 24 livelli, ognuno dei quali viene sbloccato solo in caso di vittoria nel livello precedente salvando i dati correnti del player. In ogni stage si ottiene un punteggio totale pari al numero e alla tipologia di nemici eliminati e ad ogni power up catturato, calcolandone un punteggio totale (hi-score) che in caso di superamento verrà aggiornato e visualizzato nel menu di gioco.
@@ -14,7 +14,7 @@ Una volta selezionata la modalità network è possibile creare o accedere ad una
 • Oltre alle modalità precedenti il gioco consente la creazione di mappe personalizzate attraverso l’utilizzo di un editor intelligente, che controlla se la mappa creata soddisfa o meno i requisiti di gioco.
 Le difficoltà di gioco possono essere scelte tra easy, normal e hard, dove quest’ultimo è stato realizzato con l’intelligente algoritmo A-star, che non renderà così semplice la vostra esperienza di gioco.
 
-3. Specifiche dettagliate:
+**3. Specifiche dettagliate:
 
 Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello del carrarmato. Le vite del carrarmato sono 3, quando si muore, si ritorna automaticamente al livello 1 e si perde una vita ripartendo dalla posizione di partenza. Le vite perse possono essere recuperate attraverso dei potenziamenti. Quando si muore, si ritorna automaticamente al livello 1.
 
@@ -34,7 +34,7 @@ Ogni mappa può essere costituita dai seguenti oggetti
 
 ![image](images/4.png)
 
-4.	Descrizione Classi:
+**4.	Descrizione Classi:
 
 •	GameManager – (package core)
 Questa classe  gestisce l’intero gioco per quanto riguarda la parte logica, sia nell’offline che in una partita online. Al suo interno troviamo metodi che hanno lo scopo di inizializzare il campo di battaglia e tutti i suoi relativi oggetti appartenenti reperendoli da una mappa scelta dall’utente. Inoltre svolge il ruolo di aggiornare gli update di tutti gli oggetti dinamici e gestirne le eventuali collisioni.
@@ -64,7 +64,7 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 
 
 
-5. Screenshots:
+**5. Screenshots:
 
 Editor:
 ![image](images/editor.png)
