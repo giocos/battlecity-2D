@@ -1,6 +1,6 @@
 # BATTLE CITY
 
-**1. Introduzione: **
+**1. Introduzione:
 
 Battle City è un videogioco arcade che rispecchia lo stile NES realizzato con una grafica 2D, utilizzando le swing fornite dalla libreria di Java 8.
 Il player è rappresentato da un carrarmato che si scontrerà con altri carrarmati nemici con il solo scopo di difendere la sua fortezza.
@@ -36,7 +36,8 @@ Ogni mappa può essere costituita dai seguenti oggetti
 
 **4.	Descrizione Classi:
 
-•	GameManager – (package core)
+•GameManager – (package core)
+
 Questa classe  gestisce l’intero gioco per quanto riguarda la parte logica, sia nell’offline che in una partita online. Al suo interno troviamo metodi che hanno lo scopo di inizializzare il campo di battaglia e tutti i suoi relativi oggetti appartenenti reperendoli da una mappa scelta dall’utente. Inoltre svolge il ruolo di aggiornare gli update di tutti gli oggetti dinamici e gestirne le eventuali collisioni.
 Metodo principale:      update()
 Questo metodo è il nucleo del mondo in quanto si occupa di aggiornare tutte le componenti logiche di una partita, infatti si trova all’interno di ogni oggetto dinamico e gestisce tutte le collisioni relative ad essi. Per comodità, nel codice tale metodo è stato dichiarato abstract nella classe padre estesa ai vari figli rappresentati da oggetti dinamici, i quali si occuperanno di richiamare e ridefinire il seguente metodo. 
