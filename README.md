@@ -21,8 +21,6 @@ Ogni giocatore ha un numero di colpi (rockets) che variano in base al livello de
 ![image](images/1.png)
 (spara un colpo che distrugge le pareti in acciaio e sono due volte più efficaci)
 
-
-
 Ogni nemico ha le proprie caratteristiche, i quali possono essere lampeggianti ( all’uccisione rilasciano cadere un powerUp random ) o normali che non rilasciano nessun powerUp. Inoltre anche i nemici posso catturare il potenziamento HELMET.
 
 ![image](https://drive.google.com/open?id=1hcjedrcKllaXqMvyUn3pPxHTh1jxHUBy)
