@@ -1,4 +1,4 @@
-# BATTLE CITY
+![image](images/title.png)
 
 **1. Introduzione:
 
@@ -67,12 +67,8 @@ In questa classe, che implementa un Runnable, vengono settati i canali di comuni
 
 **5. Screenshots:
 
-Editor:
-![image](images/editor.png)
-
-Lobby:
-![image](images/lobby.png)
-
-Online:
-![image](images/online.png)
+![homepage](images/home.png)
+![editor](images/editor.png)
+![lobby](images/lobby.png)
+![online](images/online.png)
 
