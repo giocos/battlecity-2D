@@ -53,7 +53,7 @@ Questa classe è strettamente dipendente dalla classe sopra enunciata (GameManag
 Il seguente metodo viene ridefinito dalla classe Thread e richiama il gameLoop con la seguente sintassi :
 ```
 gameLoop() {
-          logic();
+        core();
         graphic();
 }
 ```
