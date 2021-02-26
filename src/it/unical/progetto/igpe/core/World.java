@@ -2,8 +2,8 @@ package it.unical.progetto.igpe.core;
 
 public class World {
 	
-	private int row;
-	private int column;
+	private final int row;
+	private final int column;
 	private AbstractStaticObject[][] world;
 	private AbstractStaticObject[][] objectStatic;
 
@@ -20,22 +20,6 @@ public class World {
 		this.setWorld(new AbstractStaticObject[row][column]);
 	}
 
-	public int getRow() {
-		return row;
-	}
-
-	public void setRow(int row) {
-		this.row = row;
-	}
-
-	public int getColumn() {
-		return column;
-	}
-
-	public void setColumn(int column) {
-		this.column = column;
-	}
-
 	public void print() {
 		for (int a = 0; a < row; a++) {
 			for (int b = 0; b < column; b++) {
@@ -43,6 +27,14 @@ public class World {
 			}
 			System.out.println();
 		}
+	}
+
+	public int getRow() {
+		return row;
+	}
+
+	public int getColumn() {
+		return column;
 	}
 
 	public AbstractStaticObject[][] getObjectStatic() {

@@ -173,11 +173,6 @@ public class PlayerTank extends Tank {
 		this.point = point;
 	}
 
-	@Override
-	public String toString() {
-		return id;
-	}
-
 	public boolean isDied() {
 		return died;
 	}
@@ -328,5 +323,10 @@ public class PlayerTank extends Tank {
 
 	public void setCurrentTimeMillis(long currentTimeMillis) {
 		this.currentTimeMillis = currentTimeMillis;
+	}
+
+	@Override
+	public String toString() {
+		return id;
 	}
 }

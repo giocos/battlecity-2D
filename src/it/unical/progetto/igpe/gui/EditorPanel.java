@@ -8,8 +8,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GridLayout;
 import java.awt.Rectangle;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -356,7 +354,7 @@ public class EditorPanel extends JPanel {
 		World world = new World();
 		initWorld(world);
 		GameManager game = new GameManager(world, flag);
-		EnemyTank e = new EnemyTank(0, 0, game.getMatrix(), Speed.SLOW, Speed.SLOW, Direction.STOP, 1, 1, 1);
+		EnemyTank e = new EnemyTank(0, 0, game.getWorld(), Speed.SLOW, Speed.SLOW, Direction.STOP, 1, 1, 1);
 		e.difficult(flag.getX(), flag.getY());
 		if (e.isHasApath()) {
 			return true;

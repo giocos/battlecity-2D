@@ -34,31 +34,13 @@ public class PowerUp extends AbstractStaticObject {
 		time=0;
 	}
 	
-	@Override
-	public String toString() {
-		switch (powerUp) {
-		case GRENADE:
-			return "GRENADE";
-		case HELMET:
-			return "HELMET";
-		case SHOVEL:
-			return "SHOVEL";
-		case STAR:
-			return "STAR";
-		case TANK:
-			return "TANK";
-		case TIMER:
-			return "TIMER";
-		default:
-			return null;
-		}
-	}
-	
 	public int duration(){
-		if(powerUp == Power.HELMET || powerUp == Power.TIMER)
+		if (powerUp == Power.HELMET || powerUp == Power.TIMER) {
 			return 10;
-		if(powerUp == Power.SHOVEL)
+		}
+		if (powerUp == Power.SHOVEL) {
 			return 12;
+		}
 		return 0;
 	}
 	
@@ -172,6 +154,26 @@ public class PowerUp extends AbstractStaticObject {
 
 	public void setBlinkShovel(boolean blinkShovel) {
 		this.blinkShovel = blinkShovel;
+	}
+
+	@Override
+	public String toString() {
+		switch (powerUp) {
+			case GRENADE:
+				return "GRENADE";
+			case HELMET:
+				return "HELMET";
+			case SHOVEL:
+				return "SHOVEL";
+			case STAR:
+				return "STAR";
+			case TANK:
+				return "TANK";
+			case TIMER:
+				return "TIMER";
+			default:
+				return null;
+		}
 	}
 
 }

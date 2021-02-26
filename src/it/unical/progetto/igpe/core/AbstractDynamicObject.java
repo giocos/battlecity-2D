@@ -66,9 +66,8 @@ public abstract class AbstractDynamicObject extends AbstractStaticObject impleme
 	}
 	
 	public void update() {
-		
-		canGo=true;
-		onBorder=false;
+		canGo = true;
+		onBorder = false;
 		
 		// rimette l oggetto di prima
 		if (!(curr instanceof Tank)) {
@@ -82,13 +81,12 @@ public abstract class AbstractDynamicObject extends AbstractStaticObject impleme
 				if (sameObject()) {
 					setX(getX() - 1);
 				}
-				else
-					canGo=false;
-			}
-			else {
-				canGo=false;
-				//System.out.println("up");
-				onBorder=true;
+				else {
+					canGo = false;
+				}
+			} else {
+				canGo = false;
+				onBorder = true;
 			}
 			break;
 		case DOWN:
@@ -97,13 +95,12 @@ public abstract class AbstractDynamicObject extends AbstractStaticObject impleme
 				if (sameObject()) {
 					setX(getX() + 1);
 				}
-				else
-					canGo=false;
-			}	
-			else {
-				canGo=false;
-				//System.out.println("down");
-				onBorder=true;
+				else {
+					canGo = false;
+				}
+			} else {
+				canGo = false;
+				onBorder = true;
 			}
 			break;
 		case LEFT:
@@ -112,13 +109,12 @@ public abstract class AbstractDynamicObject extends AbstractStaticObject impleme
 				if (sameObject()) {
 					setY(getY() - 1);
 				}
-				else
-					canGo=false;
-			}
-			else {
-				canGo=false;
-				//System.out.println("left");
-				onBorder=true;
+				else {
+					canGo = false;
+				}
+			} else {
+				canGo = false;
+				onBorder = true;
 			}
 			break;
 		case RIGHT:
@@ -126,13 +122,11 @@ public abstract class AbstractDynamicObject extends AbstractStaticObject impleme
 				next = getWorld().getWorld()[getX()][getY() + 1];
 				if (sameObject()) {
 					setY(getY() + 1);
+				} else {
+					canGo = false;
 				}
-				else
-					canGo=false;
-			}
-			else {
+			} else {
 				canGo=false;
-				//System.out.println("right");
 				onBorder=true;
 			}
 			break;

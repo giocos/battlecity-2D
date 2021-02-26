@@ -72,11 +72,6 @@ public class Rocket extends AbstractDynamicObject {
 		super.setDirection(direction);
 	}
 
-	@Override
-	public String toString() {
-		return " -- ";
-	}
-
 	public AbstractDynamicObject getTank() {
 		return tank;
 	}
@@ -107,5 +102,10 @@ public class Rocket extends AbstractDynamicObject {
 
 	public void setOneTimeSound(boolean ontTimeSound) {
 		this.oneTimeSound = ontTimeSound;
+	}
+
+	@Override
+	public String toString() {
+		return " -- ";
 	}
 }

@@ -1231,7 +1231,7 @@ public class GamePanel extends JPanel {
 					game.getEnemy().get(a).setShotTimeEverySecond(0);
 				}
 
-				game.getMatrix().getWorld()[game.getEnemy().get(a).getX()][game.getEnemy().get(a).getY()] = game
+				game.getWorld().getWorld()[game.getEnemy().get(a).getX()][game.getEnemy().get(a).getY()] = game
 						.getEnemy().get(a);
 				game.getEnemy().get(a).setUpdateObject(false);
 			}
@@ -1377,9 +1377,9 @@ public class GamePanel extends JPanel {
 	}
 
 	private void paintTrees(Graphics g) {
-		for (int a = 0; a < game.getMatrix().getRow(); a++) {
-			for (int b = 0; b < game.getMatrix().getColumn(); b++) {
-				if (game.getMatrix().getObjectStatic()[a][b] instanceof Tree && !powerUpShovelActive(a, b)) {
+		for (int a = 0; a < game.getWorld().getRow(); a++) {
+			for (int b = 0; b < game.getWorld().getColumn(); b++) {
+				if (game.getWorld().getObjectStatic()[a][b] instanceof Tree && !powerUpShovelActive(a, b)) {
 					g.drawImage(ImageProvider.getTree(), b * tile, a * tile, null);
 				}
 			}
@@ -1493,9 +1493,9 @@ public class GamePanel extends JPanel {
 	}
 
 	private void paintIce(Graphics g) {
-		for (int a = 0; a < game.getMatrix().getRow(); a++) {
-			for (int b = 0; b < game.getMatrix().getColumn(); b++) {
-				if (game.getMatrix().getObjectStatic()[a][b] instanceof Ice && !powerUpShovelActive(a, b))
+		for (int a = 0; a < game.getWorld().getRow(); a++) {
+			for (int b = 0; b < game.getWorld().getColumn(); b++) {
+				if (game.getWorld().getObjectStatic()[a][b] instanceof Ice && !powerUpShovelActive(a, b))
 					g.drawImage(ImageProvider.getIce(), b * tile, a * tile, null);
 			}
 		}
@@ -1539,9 +1539,9 @@ public class GamePanel extends JPanel {
 	}
 
 	private void paintWater(Graphics g) {
-		for (int a = 0; a < game.getMatrix().getRow(); a++) {
-			for (int b = 0; b < game.getMatrix().getColumn(); b++) {
-				if (game.getMatrix().getObjectStatic()[a][b] instanceof Water && !powerUpShovelActive(a, b)) {
+		for (int a = 0; a < game.getWorld().getRow(); a++) {
+			for (int b = 0; b < game.getWorld().getColumn(); b++) {
+				if (game.getWorld().getObjectStatic()[a][b] instanceof Water && !powerUpShovelActive(a, b)) {
 					if (GameManager.currentTime % 2 == 0)
 						g.drawImage(ImageProvider.getWaterA(), b * tile, a * tile, null);
 					else
@@ -1836,11 +1836,11 @@ public class GamePanel extends JPanel {
 
 	private void paintFlagBrickSteelPower(Graphics g) {
 
-		for (int a = 0; a < game.getMatrix().getRow(); a++) {
-			for (int b = 0; b < game.getMatrix().getColumn(); b++) {
+		for (int a = 0; a < game.getWorld().getRow(); a++) {
+			for (int b = 0; b < game.getWorld().getColumn(); b++) {
 
 				// paintFlag
-				if (game.getMatrix().getWorld()[a][b] instanceof Flag) {
+				if (game.getWorld().getWorld()[a][b] instanceof Flag) {
 					if (!game.getFlag().isHit() && game.getPlayersArray().size() > 0)
 						g.drawImage(ImageProvider.getFlag(), b * tile, a * tile, null);
 					else {
@@ -1849,12 +1849,12 @@ public class GamePanel extends JPanel {
 				}
 
 				// paintBrickWall
-				if (game.getMatrix().getWorld()[a][b] instanceof BrickWall) {
+				if (game.getWorld().getWorld()[a][b] instanceof BrickWall) {
 
-					if (((BrickWall) game.getMatrix().getWorld()[a][b]).getBefore() == null) {
+					if (((BrickWall) game.getWorld().getWorld()[a][b]).getBefore() == null) {
 						g.drawImage(ImageProvider.getBrick(), b * tile, a * tile, null);
 					} else { // altrimenti disegno powerUp
-						PowerUp power = ((PowerUp) ((BrickWall) game.getMatrix().getWorld()[a][b]).getBefore());
+						PowerUp power = ((PowerUp) ((BrickWall) game.getWorld().getWorld()[a][b]).getBefore());
 
 						if (power.isBlink()) {
 							if ((System.currentTimeMillis() / 400) % 2 == 0)
@@ -1862,17 +1862,17 @@ public class GamePanel extends JPanel {
 							else
 								g.drawImage(ImageProvider.getBrick(), power.getY() * tile, power.getX() * tile, null);
 						} else {
-							paintPowerUp(g, (PowerUp) ((BrickWall) game.getMatrix().getWorld()[a][b]).getBefore());
+							paintPowerUp(g, (PowerUp) ((BrickWall) game.getWorld().getWorld()[a][b]).getBefore());
 						}
 					}
 				}
 
 				// paintSteelWall
-				if (game.getMatrix().getWorld()[a][b] instanceof SteelWall) {
-					if (((SteelWall) game.getMatrix().getWorld()[a][b]).getBefore() == null) {
+				if (game.getWorld().getWorld()[a][b] instanceof SteelWall) {
+					if (((SteelWall) game.getWorld().getWorld()[a][b]).getBefore() == null) {
 						g.drawImage(ImageProvider.getSteel(), b * tile, a * tile, null);
 					} else { // altrimenti disegno powerUp
-						PowerUp power = ((PowerUp) ((SteelWall) game.getMatrix().getWorld()[a][b]).getBefore());
+						PowerUp power = ((PowerUp) ((SteelWall) game.getWorld().getWorld()[a][b]).getBefore());
 
 						if (power.isBlink()) {
 							if ((System.currentTimeMillis() / 400) % 2 == 0)
@@ -1880,7 +1880,7 @@ public class GamePanel extends JPanel {
 							else
 								g.drawImage(ImageProvider.getSteel(), power.getY() * tile, power.getX() * tile, null);
 						} else {
-							paintPowerUp(g, (PowerUp) ((SteelWall) game.getMatrix().getWorld()[a][b]).getBefore());
+							paintPowerUp(g, (PowerUp) ((SteelWall) game.getWorld().getWorld()[a][b]).getBefore());
 						}
 					}
 				}

@@ -1,6 +1,6 @@
 package it.unical.progetto.igpe.core;
 
-public class Water extends GenericWall {
+public class Water extends TmpWall {
 
 	public Water(int x, int y, World world) {
 		super(x, y, world, true, false);

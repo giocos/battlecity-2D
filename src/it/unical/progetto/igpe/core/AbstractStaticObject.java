@@ -16,11 +16,11 @@ public abstract class AbstractStaticObject implements StaticObject {
 	public AbstractStaticObject(int x, int y, World world) {
 		this.x = x;
 		this.y = y;
+		this.world = world;
 		this.setSizePixel(35);
+		setDifferenceTank(3);
 		setxGraphics(x*getSizePixel());
 		setyGraphics(y*getSizePixel());
-		this.world = world;
-		setDifferenceTank(3);
 		this.setRect(new Rectangle(x*getSizePixel(), y*getSizePixel(), getSizePixel(), getSizePixel()));
 	}
 
@@ -50,11 +50,6 @@ public abstract class AbstractStaticObject implements StaticObject {
 
 	public void setWorld(World world) {
 		this.world = world;
-	}
-
-	@Override
-	public String toString() {
-		return "AbstractStaticObject [x=" + x + ", y=" + y + ", mondo=" + world + "]";
 	}
 
 	public double getxGraphics() {
@@ -95,5 +90,10 @@ public abstract class AbstractStaticObject implements StaticObject {
 
 	public void setDifferenceTank(int differenceTank) {
 		this.differenceTank = differenceTank;
+	}
+
+	@Override
+	public String toString() {
+		return "AbstractStaticObject [x=" + x + ", y=" + y + ", mondo=" + world + "]";
 	}
 }

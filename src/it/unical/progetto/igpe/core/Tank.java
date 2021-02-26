@@ -11,8 +11,8 @@ public abstract class Tank extends AbstractDynamicObject{
 	private long timerEffect;
 	private boolean readyToSpawn;
 	
-	public Tank(int x, int y, World mondo, Speed speed, Speed speedShot, Direction direction, int health) {
-		super(x, y, mondo, speed, speedShot, direction, health);
+	public Tank(int x, int y, World world, Speed speed, Speed speedShot, Direction direction, int health) {
+		super(x, y, world, speed, speedShot, direction, health);
 		this.setCountdown(0);
 		this.direction = Direction.STOP;
 		tmpDirection = Direction.STOP;
@@ -46,10 +46,6 @@ public abstract class Tank extends AbstractDynamicObject{
 
 	public void setSpawnTime(long spawnTime) {
 		this.spawnTime = spawnTime;
-	}
-
-	public Direction getDirection() {
-		return direction;
 	}
 
 	public void setOld(Direction old) {
@@ -86,6 +82,11 @@ public abstract class Tank extends AbstractDynamicObject{
 
 	public void setProtection(boolean protection) {
 		this.protection = protection;
+	}
+
+	@Override
+	public Direction getDirection() {
+		return direction;
 	}
 
 	@Override
